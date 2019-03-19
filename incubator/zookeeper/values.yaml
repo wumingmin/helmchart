@@ -139,9 +139,9 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  # storageClass: "-"
+  storageClass: "czclass"
   accessMode: ReadWriteOnce
-  size: 5Gi
+  size: 2Gi
 
 ## Exporters query apps for metrics and make those metrics available for
 ## Prometheus to scrape.
