@@ -21,10 +21,9 @@ updateStrategy:
 ## - https://github.com/kubernetes/contrib/tree/master/statefulsets/zookeeper
 ## - https://github.com/kubernetes/contrib/blob/master/statefulsets/zookeeper/Makefile#L1
 image:
-  repository: confluentinc/cp-zookeeper # Container image repository for zookeeper container.
-  tag: 4.1.1  # Container image tag for zookeeper container.
+  repository: googlecontainer/k8szk  # Container image repository for zookeeper container.
+  tag: v3  # Container image tag for zookeeper container.
   pullPolicy: IfNotPresent  # Image pull criteria for zookeeper container.
-
 service:
   type: ClusterIP  # Exposes zookeeper on a cluster-internal IP.
   annotations: {}  # Arbitrary non-identifying metadata for zookeeper service.
